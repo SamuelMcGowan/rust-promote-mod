@@ -2,6 +2,8 @@
 	"name": "rust-promote-mod",
 	"displayName": "rust-promote-mod",
 	"publisher": "longfangsong",
+	"repository": "https://github.com/longfangsong/rust-promote-mod",
+	"license": "Unlicense",
 	"description": "Promoting a .rs file module to a directory module and vice versa",
 	"version": "0.0.1",
 	"engines": {
