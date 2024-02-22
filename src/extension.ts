@@ -25,7 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
 		try {
 			await access(modRs)
 		} catch {
-			vscode.window.showErrorMessage("Module is not a Rust module directory");
+			vscode.window.showErrorMessage("Directory is not a Rust module");
 			return;
 		}
 		let restFiles = await fg([parent + "/" + modname + "/*"], {dot: true});

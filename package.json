@@ -22,11 +22,11 @@
 		"commands": [
 			{
 				"command": "rust-promote-mod.promoteFile",
-				"title": "Promote file to directory"
+				"title": "Promote Rust module to directory"
 			},
 			{
 				"command": "rust-promote-mod.downgradeDir",
-				"title": "Downgrade directory to file"
+				"title": "Downgrade Rust module to file"
 			}
 		],
 		"menus": {
