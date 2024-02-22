@@ -4,7 +4,7 @@
 	"publisher": "longfangsong",
 	"repository": "https://github.com/longfangsong/rust-promote-mod",
 	"license": "Unlicense",
-	"description": "Promoting a .rs file module to a directory module and vice versa",
+	"description": "Convert between .rs file modules and directory modules",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.59.0"
@@ -22,11 +22,11 @@
 		"commands": [
 			{
 				"command": "rust-promote-mod.promoteFile",
-				"title": "Promote file to dictionary"
+				"title": "Promote file to directory"
 			},
 			{
 				"command": "rust-promote-mod.downgradeDir",
-				"title": "Downgrade a dictionary to file"
+				"title": "Downgrade directory to file"
 			}
 		],
 		"menus": {

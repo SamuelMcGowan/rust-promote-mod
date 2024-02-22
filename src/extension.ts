@@ -7,7 +7,7 @@ export function activate(context: vscode.ExtensionContext) {
 		let segments = e.fsPath.split('/');
 		let modname = segments.pop().split('.')[0];
 		if(modname == "mod") {
-			vscode.window.showErrorMessage("Already in a directory mod");
+			vscode.window.showErrorMessage("Module is already a directory");
 			return;
 		}
 		let parent = segments.join('/');
@@ -25,12 +25,12 @@ export function activate(context: vscode.ExtensionContext) {
 		try {
 			await access(modRs)
 		} catch {
-			vscode.window.showErrorMessage("Is not a rust module directory!");
+			vscode.window.showErrorMessage("Module is not a Rust module directory");
 			return;
 		}
 		let restFiles = await fg([parent + "/" + modname + "/*"], {dot: true});
 		if (restFiles.length > 1) {
-			vscode.window.showErrorMessage("Cannot downgrade a directory with multiple files now");
+			vscode.window.showErrorMessage("Cannot downgrade a directory with submodules");
 			return;
 		}
 		let targetFile = parent + "/" + modname + ".rs";
