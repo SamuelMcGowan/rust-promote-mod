@@ -4,7 +4,7 @@
 	"publisher": "longfangsong",
 	"repository": "https://github.com/longfangsong/rust-promote-mod",
 	"license": "Unlicense",
-	"description": "Convert between .rs file modules and directory modules",
+	"description": "Convert between Rust file and directory style modules.",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.59.0"
